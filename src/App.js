@@ -1,12 +1,14 @@
 import template from './App.html'
 
 import NewsSource from './components/NewsSource/NewsSource'
+import NewsFeed from './components/NewsFeed/NewsFeed'
 
 export default {
   name: 'app',
   template: template,
   components: {
-    NewsSource
+    NewsSource,
+    NewsFeed
   },
   data() {
     return {
@@ -14,6 +16,8 @@ export default {
     }
   },
   methods: {
-    updateCurrentSource: source => this.source = source
+    updateCurrentSource: function(source) {
+      this.source = source
+    }
   }
 }

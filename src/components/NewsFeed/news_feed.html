@@ -1,0 +1,11 @@
+<section>
+  <h2>NewsFeed</h2>
+
+  <ul>
+    <li v-for="article in articles">
+      <img :src="article.urlToImage">
+      <h3><a :href="article.url">{{ article.title }}</a></h3>
+      <h4>{{ article.description }}</h4>
+    </li>
+  </ul>
+</section>
