@@ -11,9 +11,7 @@ export default {
     NewsFeed
   },
   data() {
-    return {
-      source: ''
-    }
+    return { source: '' }
   },
   methods: {
     updateCurrentSource: function(source) {

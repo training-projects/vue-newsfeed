@@ -5,9 +5,7 @@ export default {
   template: template,
   props: ['source'],
   data() {
-    return {
-      articles: []
-    }
+    return { articles: [] }
   },
   watch: {
     source: function(source) {
