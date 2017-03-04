@@ -8,4 +8,9 @@
       :value="source.id">{{ source.name }}
     </option>
   </select>
+
+  <section v-if="source">
+    <h3>{{ source.name }}</h3>
+    <h4>{{ source.description }}</h4>
+  </section>
 </section>
