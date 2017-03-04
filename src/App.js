@@ -1,6 +1,11 @@
 import template from './App.html'
 
+import NewsSource from './components/NewsSource/NewsSource'
+
 export default {
   name: 'app',
-  template: template
+  template: template,
+  components: {
+    NewsSource
+  }
 }
