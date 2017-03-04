@@ -1,16 +1,15 @@
-<section>
-  <h2>News Source</h2>
-
+<section class="source-select">
   <select @change="updateCurrentSource">
     <option>Select</option>
     <option
+      class="source-select__option"
       v-for="source in sources"
       :value="source.id">{{ source.name }}
     </option>
   </select>
 
-  <section v-if="source">
-    <h3>{{ source.name }}</h3>
-    <h4>{{ source.description }}</h4>
+  <section class="source-info" v-if="source">
+    <h3 class="source-info__name">{{ source.name }}</h3>
+    <h4 class="source-info__description">{{ source.description }}</h4>
   </section>
 </section>

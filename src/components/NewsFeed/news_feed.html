@@ -1,11 +1,13 @@
-<section>
-  <h2>NewsFeed</h2>
+<section class="feed">
+  <h2 class="feed__title">NewsFeed</h2>
 
-  <ul>
-    <li v-for="article in articles">
-      <img :src="article.urlToImage">
-      <h3><a :href="article.url">{{ article.title }}</a></h3>
-      <h4>{{ article.description }}</h4>
+  <ul class="feed__list">
+    <li class="feed-item" v-for="article in articles">
+      <img class="feed-item__image" :src="article.urlToImage">
+      <h3 class="feed-item__title">
+        <a class="feed-item__link" :href="article.url">{{ article.title }}</a>
+      </h3>
+      <h4 class="feed-item__description">{{ article.description }}</h4>
     </li>
   </ul>
 </section>

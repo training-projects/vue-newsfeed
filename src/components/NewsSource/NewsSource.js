@@ -1,4 +1,5 @@
 import template from './news_source.html'
+import css from './news_source.css'
 
 export default {
   name: 'news-source',
