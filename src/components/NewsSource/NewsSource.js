@@ -16,10 +16,12 @@ export default {
   methods: {
     updateCurrentSource: function(event) {
       this.sources.map(source => {
-        if(source.id === event.target.value) this.source = source
-      })
+        if(source.id === event.target.value) {
+          this.source = source
 
-      this.$emit('currentSource', event.target.value)
+          this.$emit('currentSource', source.id)
+        }
+      })
     }
   }
 }
