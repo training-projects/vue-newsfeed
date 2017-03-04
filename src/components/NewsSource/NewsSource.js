@@ -3,7 +3,7 @@ import template from './news_source.html'
 export default {
   name: 'news-source',
   template: template,
-  data: function() {
+  data() {
     return {
       sources: [],
       source: ''
@@ -18,6 +18,8 @@ export default {
       this.sources.map(source => {
         if(source.id === event.target.value) this.source = source
       })
+
+      this.$emit('currentSource', event.target.value)
     }
   }
 }

@@ -7,5 +7,13 @@ export default {
   template: template,
   components: {
     NewsSource
+  },
+  data() {
+    return {
+      source: ''
+    }
+  },
+  methods: {
+    updateCurrentSource: source => this.source = source
   }
 }
